@@ -1,17 +1,19 @@
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-BODY STYLING
+FONTS
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-* {
-  box-sizing: border-box;
-}
-
-/* FONTS*/
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Homemade+Apple&display=swap');
+
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+BODY STYLING
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -20,24 +22,32 @@ body {
  font-family: "Montserrat", sans-serif;
 }
 
+
 h1 {
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
+
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
     font-size: 30px;
+    text-align: justify;
 }
 
+
 h3 {
-    font-family: 'Homemade Apple', cursive;
-    font-weight: 400;
-    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0px;
 }
+
 
 p {
     font-family: 'Montserrat', sans-serif;
+
 }
 
 
@@ -61,14 +71,15 @@ MENU STYLING
 .topnav {
   overflow: hidden;
   position: fixed;
-  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 9px 1px rgba(0, 0, 0, 0.2);
   text-align: center;
   font-weight: 600;
-    font-size: 12px;
+  font-size: 15px;
   background-color:  orange;
   z-index: 999;
-  border-radius: 0 10px 10px 0;
-    margin: 10px 0 0 0;
+  border-radius: 0 5px 5px 0;
+  margin: 20px 0 0 0;
+    display:flex;
 }
 
 
@@ -79,6 +90,7 @@ VANISH IN ANIMATION
   animation-name: swap;
     animation-duration: 3s;
 }
+
 
 @keyframes swap {
   0% {
@@ -98,13 +110,13 @@ VANISH IN ANIMATION
 MENU LINKS STYLING
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .topnav a {
-  float: center;
   display: block; /*or float for a horizontal layout of  topnav, but needs extra styling*/
   color: #f2f2f2;
   text-align: center;
-  padding: 20px 10px;
+  padding: 25px 25px;
   text-decoration: none;
 }
+
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 MENU - STYLING 4 HOOVER ON LINKS
@@ -116,24 +128,19 @@ MENU - STYLING 4 HOOVER ON LINKS
 }
 
 
-
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 IMAGES STYLING
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-
 .responsive {
   width: 100%;
-    text-align: center;
+  text-align: center;
   height: auto;
-    background-image: url("index.jpg");
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-}
-.image-title {
-
+  background-image: url("index.jpg");
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
 }
 
 
@@ -147,6 +154,7 @@ IMAGES STYLING
   padding: 25px;
 }
 
+
 .above {
     background-color: lightpink;
     box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
@@ -159,6 +167,7 @@ IMAGES STYLING
   clear: both;
 }
 
+
 .position {
   width: 100%;
   text-align: center;
@@ -167,6 +176,7 @@ IMAGES STYLING
   color: white;
   box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 .position h2 {
     margin-top: 0;
@@ -191,16 +201,15 @@ NAVIGATION MENU RESPONSIVE
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
 when device turns from desktop to mobile
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-
 @media screen and (max-width: 600px) {
-  .button {
+    .button {
     width: 100%;
     display: block;
     margin-bottom: 10px;
   }
 
-    .topnav a {
-        float: right;
+    .topnav {
+        flex-direction: column;
     }
 }
 
@@ -215,6 +224,7 @@ when device turns from desktop to mobile
   border-radius: 6px;
 }
 
+
 .cv_image {
   width: 100%;
   height: auto;
@@ -224,7 +234,7 @@ when device turns from desktop to mobile
             PORTFOLIO
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .basic_web {
-  background-color: #9DB5B2;
+  background-color: #7aa6a6;
   padding: 10vw;
   text-align: center;
   color: white;
@@ -232,14 +242,15 @@ when device turns from desktop to mobile
 
 
 .basic_animation {
-  background-color: #F2E5D7;
+  background-color: #ffe4d5;
   padding: 10vw;
   text-align: center;
   color: black;
 }
 
+
 .basic_content {
-  background-color: #546A7B;
+  background-color: #003366;
   padding: 10vw;
   text-align: center;
   color: white;
@@ -249,8 +260,9 @@ when device turns from desktop to mobile
     color: black;
 }
 
+
 .basic_UX {
-  background-color: #bfc7b8;
+  background-color: #ffcfca;
   padding: 10vw;
   text-align: center;
   color: black;
@@ -259,6 +271,7 @@ when device turns from desktop to mobile
 .basic_UX .button {
     color: black;
 }
+
 
 .project-box {
     background-color: inherit;
@@ -276,8 +289,10 @@ when device turns from desktop to mobile
     grid-row-gap: 40px;
 }
 
+
 .button {
   text-align: center;
+  font-weight: bold;
   background-color: inherit;
   border: solid 3px;
   color: white;
@@ -288,6 +303,7 @@ when device turns from desktop to mobile
   margin: 4px 2px;
   cursor: pointer;
 }
+
 
 .button:hover {
     background-color: orange;
@@ -308,17 +324,19 @@ when device turns from desktop to mobile
     height: 0px;
     box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
 }
+
+
 #btn {
   background-color: #D58890;
   color: white;
   cursor: pointer;
   box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 10%;
+  padding: 5%;
   width: 100%;
   border: none;
   text-align: center;
   outline: none;
-  font-size: 24px;
+  font-size: 15px;
   font-family: sans-serif, bold;
 }
 
@@ -326,9 +344,11 @@ when device turns from desktop to mobile
 
 .active,
 
+
 #btn:hover {
-  background-color: black
+  background-color: orange;
 }
+
 
 .contact {
   padding: 10%;
@@ -339,39 +359,47 @@ when device turns from desktop to mobile
   transform-origin: top;
 }
 
+
 section {
   perspective: 1000px;
   perspective-origin: top;
 }
 
+
 #contactform {
   padding: 30px 0;
 }
 
+
 .hide {
   display: none;
 }
+
 
 .message-btn {
   margin-top: 1.5em;
   display: inline-block;
   width: auto;
   background-color: #D58890;
-    border: solid 2px white;
+  border: solid 2px white;
   color: white;
   padding: 10px;
+    font-weight: bold;
   text-decoration: none;
 }
+
 
 .message-btn:hover {
     background-color: orange;
     border: solid 2px orange;
 }
 
+
 .show {
   animation: open .65s forwards;
   display: block;
 }
+
 
 @keyframes open {
   50% {
@@ -383,15 +411,20 @@ section {
   }
 }
 
+
 input, label{
     display: block;
 }
+
+
 .input-styled{
     margin: 3px 0 10px 0;
     width: 100%;
     height: 40px;
     padding-left: 10px;
 }
+
+
 .request{
     width: 100%;
     height: 80px;
@@ -401,15 +434,17 @@ input, label{
     min-height: 40px;
     min-width: 100%;
 }
+
+
 input, textarea{
     border-style: none;
 }
 
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-            TIMELINE
+              ABOUT
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
-            ABOUT PAGE
+            TIMELINE
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 
 /* The actual timeline (the vertical ruler) */
@@ -503,7 +538,7 @@ input, textarea{
   background-color: #D58890;
   box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
   position: relative;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -541,6 +576,33 @@ input, textarea{
 }
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
+        DOWNLOAD BUTTON
+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
+#btn2 {
+  background-color: #D58890;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  width: 100%;
+  border: none;
+  text-align: center;
+    text-decoration: none;
+  outline: none;
+  font-size: 30px;
+    font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+#btn2:hover {
+  background-color: orange;
+}
+
+#a-btn2 {
+    text-decoration: none;
+}
+/*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
       SOCIAL MEDIA CONTAINER
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
 .social_icons {
@@ -548,14 +610,17 @@ input, textarea{
   margin: 5px 5px 5px 5px;
 }
 
+
 .social_icons a img{
     height: 30px;
     width: auto;
 }
 
+
 .social_icons a:hover {
   opacity: 0.5;
 }
+
 
 .social_icons {
   text-align: center;
@@ -570,10 +635,13 @@ input, textarea{
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #f0ab61;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: orange;
   color: white;
   text-align: center;
 }
+
 
 .footer p{
     margin: 7px;
