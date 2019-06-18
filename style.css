@@ -230,6 +230,7 @@ when device turns from desktop to mobile
   height: auto;
 }
 
+
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
             PORTFOLIO
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
@@ -446,7 +447,6 @@ input, textarea{
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
             TIMELINE
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
@@ -548,14 +548,14 @@ input, textarea{
     left: 31px;
   }
 
-  /* Full-width containers */
+/* Full-width containers */
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
 
-  /* Make sure that all arrows are pointing leftwards */
+/* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
     border: medium solid white;
@@ -563,17 +563,18 @@ input, textarea{
     border-color: transparent white transparent transparent;
   }
 
-  /* Make sure all circles are at the same spot */
+/* Make sure all circles are at the same spot */
   .left::after,
   .right::after {
     left: 15px;
   }
 
-  /* Make all right containers behave like the left ones */
+/* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
 }
+
 
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
         DOWNLOAD BUTTON
@@ -602,6 +603,8 @@ input, textarea{
 #a-btn2 {
     text-decoration: none;
 }
+
+
 /*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*
       SOCIAL MEDIA CONTAINER
 *+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*+*/
